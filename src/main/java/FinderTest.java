@@ -1,5 +1,5 @@
 import org.junit.*;
-import static org.junit.Assert.assrtEquals;
+import static org.junit.Assert.assertEquals;
 
 public class FinderTest {
     @Before public void setUp() {
@@ -8,13 +8,13 @@ public class FinderTest {
 
     @Test public void findMaxTest(){
         Finder max = new Finder();
-       int[] array = {1,3,5,7,8,10};
-       assertEquals(expected: 10, Finder.finderMax(array));
+        int[] array = {1,3,5,7,8,10};
+        assertEquals(10, Finder.findMax(array));
     }
 
     @Test public void findMinTest(){
-        Finder.findMin max = new Finder.findMin();
+        Finder min = new Finder();
         int[] array = {10,3,5,7,2,14};
-        assertEquals(expected: 2, Finder.finderMin(array));
+        assertEquals(2, Finder.findMin(array));
     }
 }
